@@ -1,0 +1,79 @@
+/* 設置整個應用的字體 */
+body {
+  font-family: Georgia, sans-serif;
+  text-align: center; /* 將所有文本置中 */
+  background-color: #FFFCEC; /* 添加背景顏色以便更好地顯示效果 */
+  font-size: 25px;
+}
+
+/* 主要應用容器的樣式 */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 使容器占滿整個視窗 */
+}
+
+/* 設置按鈕間距和改變按鈕形狀 */
+.option-button {
+  padding: 10px 20px;
+  margin: 10px; /* 設置按鈕之間的間距 */
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px; /* 圓角矩形形狀，根據需要調整半徑 */
+  border: none; /* 去掉默認邊框 */
+  background-color: #A23400; /* 設置背景顏色 */
+  color: #FFFCEC; /* 設置文字顏色 */
+  transition: background-color 0.3s ease; /* 添加過渡效果 */
+  width: 250px; /* 設置固定寬度 */
+}
+
+.option-button:hover {
+  background-color: #642100; /* 設置懸停時的背景顏色 */
+}
+
+.option-button.change {
+  background-color: #642100;
+}
+
+/* 按鈕容器的樣式 */
+.options-container {
+  display: flex;
+  flex-direction: column; /* 讓子元素呈現直排 */
+  align-items: center; /* 子元素水平居中 */
+  justify-content: center; /* 子元素垂直居中 */
+  height: 100%; /* 讓容器高度為父容器高度 */
+}
+
+/* 控制按鈕樣式 */
+.control-button {
+  padding: 10px 20px;
+  margin: 10px; /* 設置按鈕之間的間距 */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* 圓角矩形形狀，根據需要調整半徑 */
+  border: none; /* 去掉默認邊框 */
+  background-color: #00A600; /* 設置背景顏色 */
+  color: #FFFCEC; /* 設置文字顏色 */
+  transition: background-color 0.3s ease; /* 添加過渡效果 */
+}
+
+.control-button:hover {
+  background-color: #007500; /* 設置懸停時的背景顏色 */
+}
+
+input[type="radio"] {
+  margin: 10px;
+}
+
+label {
+  margin: 0 10px;
+}
+
+.result-photo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}

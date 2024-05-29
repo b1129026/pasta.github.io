@@ -1,0 +1,76 @@
+/* 設置整個應用的字體和背景 */
+body {
+  font-family: Georgia, sans-serif;
+  text-align: center; /* 將所有文本置中 */
+  background-color: #FFFCEC; /* 添加背景顏色以便更好地顯示效果 */
+  font-size: 20px;
+  margin: 0; /* 移除默認邊距 */
+}
+
+/* 主要應用容器的樣式 */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 使容器占滿整個視窗 */
+}
+
+/* 結果頁面容器樣式 */
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-content {
+  flex: 1;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.result-inline {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+ 
+}
+.result-hash {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+
+/* 結果頁面中的照片樣式 */
+.result-photo {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* 輸入和標籤的樣式 */
+input[type="radio"] {
+  margin: 10px;
+}
+
+label {
+  margin: 0 10px;
+}
